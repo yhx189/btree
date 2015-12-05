@@ -1,0 +1,18 @@
+Team members: Aaron Loh, William Flahive, Yang Hu
+
+What works:
+    Update.
+    Insert. 
+        Insertion mostly works. Except for the special case that
+        splitting the root node may cause memory corrupt(only happens with
+        key size >=256).
+    Sanity check. 
+        Check for if it is a tree, if it is in order, if it is
+        balanced, and if it has valid use ratio.
+
+Extra credit:
+    Range queries. 
+        Simple interface provided in ./btree_range_query.cc.
+    Deletion. 
+        Only partially implemented removing a key value
+        pair in the leaf node without merging nodes or removing an interior node.
